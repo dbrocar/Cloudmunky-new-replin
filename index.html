@@ -646,6 +646,67 @@ body{background:linear-gradient(180deg,#eaf5ee,#d4edda);background-attachment:fi
 [data-theme="dark"] .n-name,[data-theme="dark"] .summary-title,[data-theme="dark"] .hist-period-label{color:var(--c-text);}
 [data-theme="dark"] .theme-toggle{background:var(--c-card2);border-color:var(--c-border2);}
 [data-theme="dark"] .shaded-recipe-tip{background:rgba(200,168,64,.08);}
+
+/* ── Dark mode: modals ── */
+[data-theme="dark"] .modal{background:var(--c-card);color:var(--c-text);}
+[data-theme="dark"] .modal-title{color:var(--c-accent);}
+[data-theme="dark"] .modal-hint{color:var(--c-text2);}
+[data-theme="dark"] .modal-close{color:var(--c-text2);}
+[data-theme="dark"] .usda-modal-panel{background:var(--c-card2);border:1px solid var(--c-border);}
+[data-theme="dark"] .usda-modal-toggle{color:var(--c-accent);}
+[data-theme="dark"] .swap-option{background:var(--c-card2);color:var(--c-text);border-color:var(--c-border);}
+[data-theme="dark"] .swap-option.active{background:rgba(200,168,64,.18);border-color:var(--c-accent);color:var(--c-accent);}
+[data-theme="dark"] .swap-sched-tag{color:var(--c-text2);}
+[data-theme="dark"] .ai-row{color:var(--c-text);}
+[data-theme="dark"] .ai-input{background:var(--c-input);border-color:var(--c-input-b);color:var(--c-text);}
+[data-theme="dark"] .usda-status{color:var(--c-text2);}
+[data-theme="dark"] .usda-result-item{background:var(--c-card2);border-color:var(--c-border);color:var(--c-text);}
+[data-theme="dark"] .usda-nutrient-row{color:var(--c-text2);border-bottom-color:var(--c-border);}
+[data-theme="dark"] .usda-search-btn{background:var(--c-accent);color:#fff;}
+[data-theme="dark"] .usda-type-chip{background:var(--c-card2);color:var(--c-text2);border-color:var(--c-border);}
+[data-theme="dark"] .usda-type-chip.active{background:var(--c-accent);color:#fff;}
+
+/* ── Dark mode: nutrition graph ── */
+[data-theme="dark"] .summary-box{background:var(--c-card);}
+[data-theme="dark"] .summary-title{color:var(--c-text);}
+[data-theme="dark"] .summary-sub{color:var(--c-text2);}
+[data-theme="dark"] .ratio-note{color:var(--c-text2);}
+[data-theme="dark"] .n-card{background:var(--c-card2);}
+[data-theme="dark"] .n-name{color:var(--c-text);}
+[data-theme="dark"] .n-val{color:var(--c-text2);}
+[data-theme="dark"] .n-range{color:var(--c-text3);}
+/* Boost bar-track visibility and pill contrast in dark mode */
+[data-theme="dark"] .bar-bg{background:rgba(255,255,255,.12);}
+[data-theme="dark"] .n-pill{opacity:.92;}
+[data-theme="dark"] .view-toggle{background:var(--c-card2);}
+[data-theme="dark"] .hist-nav-row{color:var(--c-text);}
+[data-theme="dark"] .hist-period-label{color:var(--c-text);}
+
+/* ── Dark mode: misc text ── */
+[data-theme="dark"] .recipe-line{color:var(--c-text);}
+[data-theme="dark"] .recipe-line.supp{color:var(--c-text2);}
+[data-theme="dark"] .fed-btn{background:var(--c-accent);color:#1a1a1a;}
+[data-theme="dark"] .addins-btn{border-color:var(--c-border2);color:var(--c-accent);}
+[data-theme="dark"] .meal-protein{color:var(--c-text);}
+[data-theme="dark"] .oz-tag{color:var(--c-text2);}
+[data-theme="dark"] .amt-tag{color:var(--c-accent);border-bottom-color:var(--c-accent);}
+[data-theme="dark"] .swap-sched-tag{color:var(--c-text3);}
+[data-theme="dark"] .tools-field label{color:var(--c-text2);}
+[data-theme="dark"] .tools-result{background:var(--c-card2);color:var(--c-text);}
+[data-theme="dark"] .onb-card{background:var(--c-card);}
+[data-theme="dark"] .onb-title{color:var(--c-accent);}
+[data-theme="dark"] .onb-desc{color:var(--c-text);}
+[data-theme="dark"] .home-nav-tile span:last-child{color:var(--c-text);}
+[data-theme="dark"] .collapse-arrow{color:var(--c-text2);}
+[data-theme="dark"] .date-nav{background:var(--c-card);}
+[data-theme="dark"] .date-nav-label{color:var(--c-text);}
+[data-theme="dark"] .week-note{color:var(--c-text2);}
+[data-theme="dark"] .month-cell{background:var(--c-card2);color:var(--c-text2);}
+[data-theme="dark"] .month-cell.today{border-color:var(--c-accent);}
+[data-theme="dark"] .day-view-card{background:var(--c-card);}
+[data-theme="dark"] .day-cell-pm{color:var(--c-text2);}
+[data-theme="dark"] .empty-state{color:var(--c-text2);}
+[data-theme="dark"] .empty-state div:first-child{opacity:.6;}
 /* ══ Featured row (Tools + Advisor) ══ */
 .home-featured-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
 .home-featured-tile{background:#fff;border:1px solid rgba(29,58,42,.12);border-radius:14px;padding:18px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-family:inherit;font-size:14px;font-weight:700;color:#1d3a2a;cursor:pointer;min-height:114px;box-shadow:0 2px 6px rgba(60,90,110,.08);text-align:center;outline:none;border:none;}
@@ -732,8 +793,8 @@ body{background:linear-gradient(180deg,#eaf5ee,#d4edda);background-attachment:fi
       <div class="app-title">FRESHBOWL METHOD <span class="version-tag">v.96</span></div>
       <div class="app-tagline">The Fresh Bowl Method</div>
     </div>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
   <div class="back-home-spacer" id="backHomeSpacer" style="display:none"></div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
   </div>
   <div id="activeDogBanner" class="active-dog-banner" style="display:none"></div>
 </div>
@@ -6726,14 +6787,35 @@ function buildAdditionalItemsBox(ds,slot){
 
 function changeDay(n){ _calNavDir=n; advDay(n); renderCalendarPage(); }
 
+// How much each confirmed meal draws from the freezer.
+// Units match FREEZER_ITEMS: bags, cubes, cubes, cubes, cubes, days.
+// Starch lives in the fridge and counts as 0.5 "days" per meal (2 meals = 1 day).
+var MEAL_DEDUCTIONS = {protein:1, organ:1, veg:1, broth:1, herb:1, starch:0.5};
+
+// Adjust freezer quantities when a meal is confirmed or un-confirmed.
+// confirmed=true → deduct (sign=-1); confirmed=false → restore (sign=+1).
+// Saves to localStorage but does NOT re-render utilities (callers handle their own render).
+function deductFreezerForMeal(confirmed){
+  var sign = confirmed ? -1 : 1;
+  var keys = Object.keys(MEAL_DEDUCTIONS);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    freezerInv[k]=freezerInv[k]||{};
+    freezerInv[k].qty=Math.max(0, freezerQty(k) + sign * MEAL_DEDUCTIONS[k]);
+  }
+  saveFreezer();
+}
+
 function toggleFed(key){
   fedLog[key]=!fedLog[key];
   try{localStorage.setItem("mya_fed",JSON.stringify(fedLog));}catch(e){}
+  deductFreezerForMeal(!!fedLog[key]);
   renderCalendarPage();
 }
 function toggleFedHome(key){
   fedLog[key]=!fedLog[key];
   try{localStorage.setItem("mya_fed",JSON.stringify(fedLog));}catch(e){}
+  deductFreezerForMeal(!!fedLog[key]);
   renderHome();
 }
 
